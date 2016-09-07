@@ -303,3 +303,27 @@ a:focus {
 .foot4 {
 	flex-basis: 25%;
 }
+
+.navigation {
+  margin-top: 2em;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 20px 180px;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  background: 
+    linear-gradient(
+      to bottom right, 
+      rgba(139,125,239, 0.65), rgba(59,153,239, .65)
+    );
+}
