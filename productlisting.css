@@ -266,9 +266,15 @@ a:focus {
 	margin-right: 20px;
 	width: 70px;
 }
-.cart_discout_label {
-	margin-right: 195px;
-	margin-top: 20px;
+.cart_discount_label {
+	/*margin-right: 95px;*/
+	/*margin-top: 20px;*/
+	/*display: inline-block;*/
+}
+
+.cart_discount_value {
+	margin-right: 85px;
+	margin-left: 50px;
 	display: inline-block;
 }
 
