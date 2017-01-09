@@ -110,6 +110,11 @@ body {
 	color: #FFFFFF;
 }
 
+.promoCodes {
+/*margin: 1rem auto;*/
+/*max-width: 500px;*/
+text-align: center;
+}
 /*########################
 	Show / Hide Cart Button
 ########################*/
