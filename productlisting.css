@@ -16,16 +16,21 @@ body {
 }
 
 .banner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 	background-image: linear-gradient(
 		to right bottom,
 		#CB4CF0 -25%,
 		#34ADFF,
 		#4BFF74 125%);
-	height: 50%;
+	height: auto;
 	box-shadow: 0 2px 2px #875BAA;
-	font-size: 2.5rem;
-	padding-top: 3rem;
+	/*font-size: 2.5rem;*/
+	font-size: 1.5rem;
+	padding: .9rem 3rem;
 }
+
 
 .banner div {
 	max-width: 700px;
@@ -34,48 +39,65 @@ body {
 
 .banner span {
 	font-family: 'FontAwesome';
-	font-size: 12rem;
+	font-size: 9rem;
 	text-shadow: 0 0 30px #FFFFFF;
 	color: #fff;
 
 }
-.banner span:after {
+/*.banner span:after {
 	content: '\f0ac';
 	vertical-align: top;
-}
+}*/
 
 .banner p {
 	display: inline-block;
 	max-width: 450px;
-	margin-left: 70px;
 	color: #fff;
-		vertical-align: top;
-
+	vertical-align: top;
+}
+@media (min-width: 600px) {
+	.banner {
+		padding: 1rem 5rem;
+		font-size: 2.5rem;
+	}
+	.banner span {
+		font-size: 12rem;
+	}
+}
+@media (min-width: 827px) {
+	.banner {
+		padding: 2.5rem 8rem;
+	}
+}
+@media (min-width: 1024px) {
+	.banner {
+		padding: 3rem 13rem;
+	}
 }
 
 .product_listings {
 	max-width: 1000px;
 	margin: 1rem auto;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	justify-content: space-around;
 }
 
 .product {
-	flex-basis: 25%;
+	flex-basis: 100%;
 	padding: 10px;
 	transition: all .3s ease;
 	background-color: #fff;
 	text-align: center;
 }
-.product:focus,
+
+/*.product:focus,
 .product:hover {
 	transform: scale(1.1);
 	box-shadow: 0 0 10px #80867F;
 	background-color: #FFFFDF;
 	z-index: 5;
-}
+}*/
 
 .product_title {
 	margin: 0 0 5px;
@@ -89,6 +111,42 @@ body {
 	font-size: .9rem;
 	clear: both;
 	text-align: left;
+}
+@media (max-width: 360px) {
+	.product {
+		/*flex-basis: 100%;*/
+		/*padding: 9px;*/
+		/*text-align: left;*/
+	}
+	.product_title {
+		/*margin: 0 0 5px;*/
+		/*float: left;*/
+		/*font-size: 2rem;*/
+	}
+	.product_price {
+		/*margin: 0 0 5px;*/
+		/*float: right;*/
+		/*font-size: 2rem;*/
+	}
+}
+
+@media (min-width: 600px) {
+	.product {
+		flex-basis: 32%;
+	}
+	.product:focus,
+	.product:hover {
+		transform: scale(1.1);
+		box-shadow: 0 0 10px #80867F;
+		background-color: #FFFFDF;
+		z-index: 5;
+	}
+}
+
+@media (min-width: 1024px) {
+	.product {
+		flex-basis: 25%;
+	}
 }
 .add_to_cart {
 	padding: 7px 11px;
